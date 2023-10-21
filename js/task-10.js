@@ -25,6 +25,7 @@ function destroyBoxes() {
 document.querySelector("button[data-create]").addEventListener("click", () => {
   createBoxes(Number(document.querySelector("input").value));
 });
-document
-  .querySelector("button[data-destroy]")
-  .addEventListener("click", destroyBoxes);
+
+document.querySelector("button[data-destroy]").addEventListener("click", () => {
+  destroyBoxes();
+});
